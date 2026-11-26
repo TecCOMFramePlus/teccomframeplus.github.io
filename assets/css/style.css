@@ -1,9 +1,9 @@
 :root {
-  --navy: #0b4a9e;
-  --navy-dark: #083878;
-  --teal: #0e9aa7;
-  --sky: #3ba3e8;
-  --amber: #f9b233;
+  --navy: #002a62;
+  --navy-dark: #001b42;
+  --teal: #007d94;
+  --sky: #0088b8;
+  --cyan: #00aec5;
   --ink: #16243a;
   --muted: #55647a;
   --bg: #ffffff;
@@ -29,7 +29,7 @@ img { max-width: 100%; height: auto; }
 
 a { color: var(--navy); text-underline-offset: 3px; }
 a:hover { color: var(--teal); }
-:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+:focus-visible { outline: 3px solid var(--cyan); outline-offset: 2px; }
 
 .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 .narrow { max-width: 780px; }
@@ -63,7 +63,7 @@ a:hover { color: var(--teal); }
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #eaf3fc 0%, #e6f6f6 100%);
+  background: linear-gradient(135deg, #eef4fb 0%, #e3f6f9 100%);
   border-bottom: 1px solid var(--line);
 }
 .hero-inner {
@@ -96,14 +96,14 @@ h2 {
 }
 h2::after {
   content: ""; display: block; width: 48px; height: 4px;
-  margin-top: 10px; border-radius: 2px; background: var(--amber);
+  margin-top: 10px; border-radius: 2px; background: var(--cyan);
 }
 .section p { margin: 0 0 1em; }
 
 /* Facts */
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 0; }
 .fact {
-  background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--teal);
+  background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--cyan);
   border-radius: var(--radius); padding: 20px;
 }
 .fact dt {
@@ -131,7 +131,7 @@ h2::after {
 .contacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .contact {
   display: flex; flex-direction: column; gap: 4px; font-style: normal;
-  background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--teal);
+  background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--cyan);
   border-radius: var(--radius); padding: 20px; overflow-wrap: anywhere;
 }
 .contact .role {
