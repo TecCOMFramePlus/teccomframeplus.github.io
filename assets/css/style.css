@@ -128,7 +128,16 @@ h2::after {
 .partners .people { margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 0.95rem; color: var(--ink); }
 
 /* Contact */
-.contact { font-style: normal; }
+.contacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.contact {
+  display: flex; flex-direction: column; gap: 4px; font-style: normal;
+  background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--teal);
+  border-radius: var(--radius); padding: 20px; overflow-wrap: anywhere;
+}
+.contact .role {
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted);
+}
 
 /* Footer */
 .site-footer { background: #fff; border-top: 1px solid var(--line); padding: 40px 0 24px; }
